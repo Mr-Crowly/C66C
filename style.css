@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap');
+
+/* -------------------------------------------- GENERAL */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /*background-color: black;*/
+    background-color: black;
+}
+header{
+    border-color: orange;
+}
+
+/* ---------------------------- BOTON "Volver arriba" */
+.container-btn .btn-up .btn{
+    display: flex;
+    margin-bottom: 15px;
+}
+.container-btn .btn-up .btn img{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    color: orange;
+    border-radius: 60px;
+}
+.container-btn .btn-up .btn:hover{
+    transform: scale(1.3);
+    transition: all 400ms;
+}
+
+/* --------------------------------------------  MENU */
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 0.9em;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: orange;
+    background-color:black;
+}
+.menu__logo{
+    padding: 15px 0px 15px 0px;
+}
+
+.menu__img{
+    width: 70px;
+    height: 70px;
+    border-radius: 1px;
+}
+
+.menu__text{
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu__item{
+    color: white;
+    text-decoration: none;
+    padding: 0px 7px 0px 7px;
+}
+
+/*.menu__item:hover{
+    color: orange;
+    font-size: larger;
+}*/
+/* -------------------------------------------- PORTADA */
+.portada{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0px auto;
+    box-shadow: 5px 5px 5px rgba(240, 240, 240, 0.5);
+}
+.portada .portada__grande{
+    width: 300%;
+    display: flex;
+    transition: all .3s ease;
+    transform: translateX(0%);
+}
+.portada .portada__img{
+    width: calc( 300% / 3 - 2em);
+    height: 500px;
+    object-fit:cover;
+    opacity: 0.8;
+}
+.portada .portada__opciones{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-wrap: row nowrap;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    padding: 7px 7px 7px 7px;
+}
+.portada .opcion{
+    width: 1.5em;
+    height: 1.5em;
+    margin: 1em;
+    background-color: rgba(50, 50, 50, 0.6);
+    border-radius: 50%;
+}
+.portada .opcion.seleccionado{
+    background-color: orange;
+}
+
+/* -------------------------------------------- CARDS */
+.staff-cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.staff-cards-title{
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-weight:400;
+    font-size: 35px;
+    font-style: italic;
+    color: orange;
+}
+.container-cards{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.container-cards .card{
+    width: 330px;
+    height: 420px;
+    border-radius: 15px;
+    box-shadow: 0 12px 16px rgba(240, 240, 240, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 5px 20px 5px;
+    background-color: orange;
+    transition: all 0.25s;
+}
+.container-cards .card:hover{
+    transform:translateY(-15px);
+    box-shadow: 0 12px 16px rgba(250, 250, 250, 0.4);
+    cursor: pointer;
+
+}
+.container-cards .card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.container-cards .card h3{
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 30px;
+    /*una familia nueva*/
+}
+.container-cards .card p{
+    padding: 1rem;
+}
+
+/*-------------------------------------------- EVENTOS*/
+.eventos-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-eventos{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.eventos-cards-title{
+    display: flex;
+    width: auto;
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+    font-weight:400;
+    font-size: 35px;
+    font-style: italic;
+    color: orange;
+    text-align: center;
+}
+.card-evento{
+    width: 1200px;
+    /*height: 450px;*/
+    margin: 20px 0px 20px 0px;
+    background-color: orange;
+    border-radius: 25px;
+    padding: 0px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+.card-cuerpo-picture{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 5px;
+}
+.card-evento__cuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    max-width: 720px;
+}
+.card-evento__cuerpo p{
+    font-size: 20px;
+    padding: 10px;
+}
+.card-evento__cuerpo__ico{
+    width: 170px;
+    height: 17s0px;
+}
+.card-evento__picture{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-evento__picture > img{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.card-evento__img{
+    width: 300px;
+    height: 300px;
+    object-fit:fill;
+    border-radius: 25px;
+    /*box-shadow: 0 10px 10px rgba(255, 255, 255, 0.9);*/
+}
+
+/*-------------------------------------------- GALERIA*/
+.gallery-pictures{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.container-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    border: solid orange 5px;
+    border-radius: 25px;
+}
+.title-gallery{
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    font-weight:400;
+    font-size: 35px;
+    font-style: italic;
+    color: orange;
+    text-align: center;
+}
+.container-pictures{
+    width: 100%;
+    height: auto;
+    max-width: 1150px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+.items-pic{
+    
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border: solid white;
+}
+.item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+/*-------------------------------------- FORMULARIO*/
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*border: solid greenyellow 3px;*/
+}
+.container-form{
+    display: flex;
+    /*border: solid orange 5px;*/
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1200px;
+    color: white;
+    margin: 20px;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+.container-form::before{
+    background-image: url(/img/Fondo-Cascos-BN.jpg);
+    background-size: cover;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0.2;
+    border-radius: 25px;
+}
+.form-body{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+.form-item{
+    display: flex;
+    padding: 8px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 100%;
+    color: orange;
+    font-size: 20px;
+    font-style: italic;
+    font-weight:bold;
+}
+.form-item > input{
+    width: 100%;
+    height: 3rem;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-bottom: 4px solid orange;
+    background-color: transparent;
+    
+}
+.form-item > input:focus{
+    background-color: rgba(169, 169, 169, 0.3);
+    outline: none;
+    border-bottom: 4px solid orangered;
+}
+.form-item > textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 18px;
+    font-family: 'roboto', sans-serif;
+    font-style: italic;
+    color: white;
+    border: none;
+    border-bottom: 4px solid orange;
+    background-color: transparent;
+    resize: none;
+}
+.form-item > textarea:focus{
+    background-color: rgba(169, 169, 169, 0.3);
+    outline: none;
+    border-bottom: 4px solid orangered;
+}
+.form-parrafo{
+    color: orange;
+    font-size: 14px;
+    font-family: 'roboto', sans-serif;
+    font-style: italic;
+}
+.form-btn > input{
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: orange;
+    font-family: 'Raleway', sans-serif;
+    /*font-family: 'roboto', sans-serif;*/
+    font-weight: 400;
+    font-size: 40px;
+    justify-content: center;
+}
+.form-btn > input:hover{
+    /*transform:translateY(-10px);*/
+    transition: all 0.35s;
+    background-color: orangered;
+}
+
+/*-------------------------------------- FOOTER*/
+.container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    height: 100px;
+    margin: 60px 0px 60px 0px;
+}
+.container-redes{
+    padding: 0px 20px 0px 20px;
+}
+.item-redes-pic{
+    height: 40px;
+    width: 40px;
+}
+.footer-copy{
+    text-align: center;
+    color:orange;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    margin: 20px 0px 20px 0px;
+}
+
+/*---------------------------- MEDIA QUERYS PARA PANTALLAS*/
+@media screen and (max-width: 360px){
+    /* --- MENU --- */
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu__item{
+        padding: 0px 3px 0px 3px;
+    }
+    .menu__items{
+        width: 100%;
+        margin: 5px 5px 5px 5px;
+        justify-content: space-around;
+    }
+    .menu__item:hover{
+        color: orange;
+    }
+
+    /* --- STAFF --- */
+    .staff-cards-title{
+        font-size: 25px;
+    }
+    .container-cards {
+        width: 90%;
+    }
+
+    /* --- EVENTOS --- */
+    .card-evento{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 95%;
+    }
+    .card-cuerpo-picture{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 60%;
+        padding: 5px;
+    }
+    .card-evento__picture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    .card-evento__cuerpo__ico{
+        padding: 5px;
+    }
+    .eventos-cards-title{
+        font-size: 25px;
+    }
+    .card-evento__cuerpo p{
+        font-size: 1.1rem;
+    }
+    .card-evento__cuerpo h3{
+        font-size: 2rem;
+    }
+    .card-evento__img{
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    /* --- FORMULARIO --- */
+    .form-contact{
+        max-width: 100%;
+    }
+    .container-form{
+        display: flex;
+        width: 95%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-body{
+        align-items: center;
+        width: 90%;
+    }
+    .form-item{
+        font-size: 1rem;
+    }
+    .form-item > input{
+        font-size: 0.9rem;
+    }
+    .form-item > textarea{
+        font-size: 0.9rem;
+    }
+    .form-parrafo{
+        font-size: 0.8rem;
+        padding: 5px 0px 5px 0px;
+    }
+    .form-btn{
+        padding: 10px 0px 10px 0px;
+        align-items: center;
+    }
+    .form-btn > input{
+        width: 200px;
+        height: 60px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 800px){
+    /* --- MENU --- */
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu__item{
+        padding: 0px 3px 0px 3px;
+    }
+    .menu__items{
+        width: 100%;
+        margin: 5px 5px 5px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu__item:hover{
+        color: orange;
+    }
+    /* --- STAFF --- */
+    .staff-cards-title{
+        font-size: 25px;
+    }
+    .container-cards {
+        width: 90%;
+    }
+    /* --- EVENTOS --- */
+    .card-evento{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 95%;
+    }
+    .card-cuerpo-picture{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 60%;
+        padding: 5px;
+    }
+    .card-evento__picture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    .card-evento__cuerpo__ico{
+        padding: 5px;
+    }
+    .eventos-cards-title{
+        font-size: 25px;
+    }
+    .card-evento__cuerpo p{
+        font-size: 1.1rem;
+    }
+    .card-evento__cuerpo h3{
+        font-size: 2rem;
+    }
+    .card-evento__img{
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    /* --- FORMULARIO --- */
+    .form-contact{
+        max-width: 100%;
+    }
+    .container-form{
+        display: flex;
+        width: 95%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-body{
+        width: 90%;
+        align-items: center;
+    }
+    .form-item{
+        width: 75%;
+        font-size: 1rem;
+    }
+    .form-item > input{
+        font-size: 0.9rem;
+    }
+    .form-item > textarea{
+        font-size: 0.9rem;
+    }
+    .form-parrafo{
+        font-size: 0.8rem;
+        padding: 5px 0px 5px 0px;
+    }
+    .form-btn{
+        padding: 10px 0px 10px 0px;
+    }
+    .form-btn > input{
+        width: 200px;
+        height: 60px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 800px){
+    /* --- GALERIA --- */
+    .items-pic:hover{
+        flex: 40%;
+        width: 450px;
+        height: 450px;
+        cursor: pointer;
+        transition: all 500ms;
+    }
+    .items-pic:hover > .item{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 500ms;
+    }
+}
