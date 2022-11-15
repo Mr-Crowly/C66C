@@ -68,7 +68,6 @@ header{
 
 .menu__item:hover{
     color: orange;
-    font-size: larger;
 }
 /* -------------------------------------------- PORTADA */
 .portada{
@@ -443,7 +442,7 @@ header{
 }
 
 /*---------------------------- MEDIA QUERYS PARA PANTALLAS*/
-@media screen and (max-width: 360px){
+@media screen and (max-width: 380px){
     
     /* --- MENU --- */
     .menu{
@@ -550,7 +549,7 @@ header{
     }
 }
 
-@media screen and (min-width: 361px) and (max-width: 800px){
+@media screen and (min-width: 380px) and (max-width: 800px){
     
     /* --- MENU --- */
     .menu{
@@ -569,6 +568,7 @@ header{
     }
     .menu__item:hover{
         color: orange;
+        font-size: larger;
     }
     /* --- STAFF --- */
     .staff-cards-title{
@@ -658,6 +658,11 @@ header{
 }
 
 @media screen and (min-width: 800px){
+    /* --- MENU --- */
+    .menu__item:hover{
+        color: orange;
+        font-size: larger;
+    }
 
     /* --- GALERIA --- */
     .items-pic:hover{
